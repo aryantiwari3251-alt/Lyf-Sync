@@ -1,7 +1,7 @@
 from torch.utils.data import DataLoader
 
-from dataset import ChestXrayDataset
-from transforms import (
+from models.dataset import ChestXrayDataset
+from models.transforms import (
     train_transform,
     valid_transform,
     test_transform

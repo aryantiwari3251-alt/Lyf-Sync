@@ -30,7 +30,7 @@ DEVICE = torch.device(
 # Dataset
 # ==========================================================
 
-NUM_CLASSES = 7
+NUM_CLASSES = 6
 
 BATCH_SIZE = 32
 
