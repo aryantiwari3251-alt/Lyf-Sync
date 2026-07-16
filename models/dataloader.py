@@ -14,7 +14,7 @@ def get_dataloaders(
     test_csv,
     image_dir,
     batch_size=32,
-    num_workers=4
+    num_workers=0
 ):
 
     train_dataset = ChestXrayDataset(
