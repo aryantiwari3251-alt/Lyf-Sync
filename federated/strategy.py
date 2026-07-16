@@ -46,11 +46,13 @@ class FedAvgStrategy:
 
         # Initialize weighted sum
         for key in global_weights.keys():
-
-            global_weights[key] *= (
+           if global_weights[key].dtype.is_floating_point:
+              global_weights[key] *= (
                 client_results[0]["samples"] /
                 total_samples
             )
+           else:
+               global_weights[key] = client_results[0]["weights"][key]   
 
         # Aggregate remaining clients
         for client in client_results[1:]:
