@@ -14,8 +14,8 @@ from sklearn.metrics import (
     classification_report
 )
 
-from model import build_model
-from dataloader import get_dataloaders
+from models.model import build_model
+from models.dataloader import get_dataloaders
 
 
 # ==========================================================
@@ -210,6 +210,109 @@ def main():
     print("\nConfusion Matrix\n")
 
     print(cm)
+    
+    # ==========================================================
+    # Save Results
+    # ==========================================================
+
+    import pandas as pd
+
+    RESULTS_DIR = os.path.join(
+        BASE_DIR,
+        "results"
+    )
+
+    os.makedirs(
+        RESULTS_DIR,
+        exist_ok=True
+    )
+
+    PREFIX = "federated"
+
+    # Save Metrics
+    metrics = pd.DataFrame({
+
+        "Metric": [
+
+            "Test Loss",
+            "Accuracy",
+            "Precision",
+            "Recall",
+            "F1 Score"
+
+        ],
+
+        "Value": [
+
+            test_loss,
+            accuracy,
+            precision,
+            recall,
+            f1
+
+        ]
+
+    })
+
+    metrics.to_csv(
+
+        os.path.join(
+
+            RESULTS_DIR,
+
+            f"{PREFIX}_metrics.csv"
+
+        ),
+
+        index=False
+
+    )
+
+    # Save Classification Report
+
+    report = classification_report(
+
+        all_labels,
+
+        all_predictions,
+
+        target_names=CLASS_NAMES,
+
+        output_dict=True,
+
+        zero_division=0
+
+    )
+
+    pd.DataFrame(report).transpose().to_csv(
+
+        os.path.join(
+
+            RESULTS_DIR,
+
+            f"{PREFIX}_classification_report.csv"
+
+        )
+
+    )
+
+    # Save Confusion Matrix
+
+    pd.DataFrame(cm).to_csv(
+
+        os.path.join(
+
+            RESULTS_DIR,
+
+            f"{PREFIX}_confusion_matrix.csv"
+
+        ),
+
+        index=False
+
+    )
+
+    print(f"\n{PREFIX.capitalize()} results saved successfully!")
 
 if __name__ == "__main__":
     main()
