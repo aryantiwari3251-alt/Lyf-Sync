@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+torch
+torchvision
+pillow
+numpy
+openpyxl
