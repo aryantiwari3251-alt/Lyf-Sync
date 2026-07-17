@@ -18,7 +18,7 @@ from models.model import build_model as customized_model_builder
 
 st.set_page_config(page_title="AI Diagnosis Engine", page_icon="🩺", layout="wide")
 
-st.title("🩺 AI-Powered Chest X-ray Diagnosis")
+st.title(" AI-Powered Chest X-ray Diagnosis")
 st.markdown("Upload a patient's chest X-ray to perform real-time diagnostic evaluation using your global Federated Learning model.")
 st.markdown("---")
 

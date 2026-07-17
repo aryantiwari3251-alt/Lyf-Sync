@@ -10,7 +10,7 @@ st.set_page_config(page_title="Network Compliance & FL", page_icon="🌐", layou
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 PROCESSED_DATA_DIR = BASE_DIR / "data" / "processed"
 
-st.title("🌐 Enterprise Network Compliance & Privacy Audit")
+st.title(" Enterprise Network Compliance & Privacy Audit")
 st.markdown("##### Administrative control center for tracking decentralized model synchronization, security protocols, and cross-institutional data bias.")
 st.markdown("---")
 

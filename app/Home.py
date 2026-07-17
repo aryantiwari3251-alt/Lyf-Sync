@@ -1,14 +1,13 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="LifeSync Platform", 
-    page_icon="🏥", 
+    page_title="LyfSync Platform", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Clean, corporate sidebar navigation branding
-st.sidebar.markdown("# 🏥 LifeSync")
+st.sidebar.markdown("# LyfSync ")
 st.sidebar.markdown("---")
 st.sidebar.caption("Enterprise Clinical Intelligence Platform v2.4")
 
@@ -16,7 +15,7 @@ st.sidebar.caption("Enterprise Clinical Intelligence Platform v2.4")
 st.markdown(
     """
     <div style="text-align: center; padding: 2rem 0rem;">
-        <h1 style="color: #0052CC; font-size: 3rem; margin-bottom: 0.5rem;">LifeSync</h1>
+        <h1 style="color: #0052CC; font-size: 3rem; margin-bottom: 0.5rem;">LyfSync</h1>
         <h3 style="color: #1E293B; font-weight: 400; margin-bottom: 1.5rem;">The Future of Collaborative Clinical Intelligence</h3>
         <p style="font-size: 1.2rem; color: #64748B; max-width: 800px; margin: 0 auto; line-height: 1.6;">
             A unified healthcare SaaS ecosystem integrating deep-learning diagnostic screening, decentralized privacy protocols, and predictive asset management into a single sovereign hospital network.
@@ -29,22 +28,22 @@ st.markdown(
 st.markdown("---")
 
 # --- THE CORE PARADOX WE SOLVE ---
-st.markdown("### 🎯 The Core Mission: Overcoming the Healthcare AI Bottleneck")
+st.markdown("### The Core Mission: Overcoming the Healthcare AI Bottleneck")
 st.write(
     "Modern medicine faces a critical conflict: AI models need massive amounts of patient data to become accurate, "
     "but strict privacy regulations (like HIPAA and GDPR) rightly lock that data down behind institutional firewalls. "
-    "**LifeSync breaks this deadlock.** By shifting from centralized data collection to decentralized data orchestration, "
+    "**LyfSync breaks this deadlock.** By shifting from centralized data collection to decentralized data orchestration, "
     "we deliver cutting-edge clinical insights while ensuring patient data never leaves its source."
 )
 
 st.markdown("---")
 
 # --- THREE VALUE PILLARS ---
-st.subheader("💡 Integrated Ecosystem Solutions")
+st.subheader(" Integrated Ecosystem Solutions")
 col1, col2, col3 = st.columns(3, gap="large")
 
 with col1:
-    st.markdown("#### 🩺 1. AI Clinical Diagnostics")
+    st.markdown("####  1. AI Clinical Diagnostics")
     st.markdown(
         "Empower frontline radiologists with advanced Computer Vision. Our core imaging engine runs "
         "high-fidelity screening protocols across **6 major thoracic pathologies**, offering instant diagnostic acceleration "
@@ -52,7 +51,7 @@ with col1:
     )
 
 with col2:
-    st.markdown("#### 🔒 2. Privacy-Preserving Federation")
+    st.markdown("####  2. Privacy-Preserving Federation")
     st.markdown(
         "Advance institutional knowledge without compromising data security. By utilizing a **Federated Learning (FedAvg)** "
         "framework, the network safely trains models across isolated hospital nodes by sharing encrypted mathematical parameters "
@@ -60,16 +59,16 @@ with col2:
     )
 
 with col3:
-    st.markdown("#### 🏥 3. Asset & Resource Optimization")
+    st.markdown("####  3. Asset & Resource Optimization")
     st.markdown(
-        "Synchronize clinical insights with physical capacity. LifeSync dynamically aligns incoming analytical diagnostics "
+        "Synchronize clinical insights with physical capacity. LyfSync dynamically aligns incoming analytical diagnostics "
         "with real-time ICU bed metrics, ventilator availability, and staffing allocations to eliminate critical bottlenecks."
     )
 
 st.markdown("---")
 
 # --- CONCEPTUAL WORKFLOW ---
-st.subheader("🔄 How LifeSync Operates in the Real World")
+st.subheader("🔄 How LyfSync Operates in the Real World")
 
 wf_col1, wf_col2, wf_col3 = st.columns(3)
 

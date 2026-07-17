@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Resource Management", page_icon="🏥", layout="wide")
 
-st.title("🏥 Hospital Resource Allocation Command Center")
+st.title(" Hospital Resource Allocation Command Center")
 st.markdown("##### Real-time tracking of critical care assets, patient admissions, and tactical staff distribution networks.")
 st.markdown("---")
 

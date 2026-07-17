@@ -1,18 +1,18 @@
 import streamlit as st
 
-st.set_page_config(page_title="About LifeSync", page_icon="ℹ️", layout="wide")
+st.set_page_config(page_title="About LifeSync", layout="wide")
 
-st.title("ℹ️ Platform Vision & Specifications")
+st.title(" Platform Vision & Specifications")
 st.markdown("##### Balancing advanced AI medical diagnostics with absolute patient data privacy.")
 st.markdown("---")
 
 # --- SECTION 1: THE CORE MISSION ---
-st.subheader("🎯 The Big Picture")
+st.subheader(" The Big Picture")
 st.write(
-    "LifeSync was built to solve a massive real-world bottleneck in healthcare technology: "
+    "LyfSync was built to solve a massive real-world bottleneck in healthcare technology: "
     "how can medical institutions use powerful Artificial Intelligence to diagnose diseases without "
     "risking patient privacy laws or leaking sensitive records? "
-    "By bridging clinical AI diagnostics with a decentralized networking framework, LifeSync allows "
+    "By bridging clinical AI diagnostics with a decentralized networking framework, LyfSync allows "
     "hospitals to collectively train and improve a global AI model while ensuring 100% of their "
     "patient images remain safely locked behind their local firewalls."
 )
@@ -20,7 +20,7 @@ st.write(
 st.markdown("---")
 
 # --- SECTION 2: THE CRUCIAL TECH PILLARS ---
-st.subheader("🛠️ Core Functional Pillars")
+st.subheader(" Core Functional Pillars")
 col1, col2, col3 = st.columns(3, gap="large")
 
 with col1:
@@ -50,7 +50,7 @@ with col3:
 st.markdown("---")
 
 # --- SECTION 3: FUTURE SCOPE ---
-st.subheader("🚀 Scalability Roadmap")
+st.subheader(" Scalability Roadmap")
 st.write(
     "To take this software from a working demonstration to an enterprise-grade hospital network, the future roadmap "
     "includes adding advanced mathematical noise parameters (Differential Privacy) to completely neutralize reverse-engineering "
