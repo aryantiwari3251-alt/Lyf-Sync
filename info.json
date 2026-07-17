@@ -1,0 +1,7 @@
+{
+  "architecture": "ResNet18",
+  "classes": 6,
+  "input_size": 224,
+  "best_accuracy": 0.8385,
+  "federated_accuracy": 0.8371
+}
