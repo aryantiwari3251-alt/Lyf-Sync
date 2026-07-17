@@ -66,7 +66,7 @@ if uploaded_file is not None:
     col1, col2 = st.columns([1, 1.2], gap="large")
     
     with col1:
-        st.markdown("### 📷 Uploaded X-ray Preview")
+        st.markdown("### Uploaded X-ray Preview")
         st.image(image, use_container_width=True, caption="Active Patient Scan Frame")
         
     with col2:
